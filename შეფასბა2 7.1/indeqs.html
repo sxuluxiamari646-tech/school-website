@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Git & GitHub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="hero">
+            <div class="badge">Git & GitHub</div>
+
+            <h1>Master <span>Git</span></h1>
+
+            <p>
+                Git არის ვერსიების კონტროლის სისტემა, ხოლო GitHub
+                გვეხმარება პროექტების ონლაინ შენახვასა და გაზიარებაში.
+            </p>
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- დავალება 1 -->
+
+        <section class="questions">
+
+            <div class="section-title">
+                <h2>დავალება 1</h2>
+                <p>Git-ის ძირითადი ცნებები და ბრძანებები</p>
+            </div>
+
+
+            <!-- კითხვა 1 -->
+
+            <div class="card">
+
+                <div class="number">1</div>
+
+                <h3>
+                    რა განსხვავებაა Local Repository-სა
+                    და Remote Repository-ს შორის?
+                </h3>
+
+                <p>
+                    <strong>Local Repository</strong> არის Git Repository,
+                    რომელიც მდებარეობს ჩვენს საკუთარ კომპიუტერში.
+                    მასში ინახება პროექტის ფაილები, Commit-ები და
+                    ცვლილებების ისტორია.
+                </p>
+
+                <p>
+                    <strong>Remote Repository</strong> არის Repository,
+                    რომელიც განთავსებულია დისტანციურ სერვერზე,
+                    მაგალითად GitHub-ზე. მისი დახმარებით შეგვიძლია
+                    პროექტის გაზიარება და სხვადასხვა კომპიუტერიდან
+                    მუშაობა.
+                </p>
+
+            </div>
+
+
+            <!-- კითხვა 2 -->
+
+            <div class="card">
+
+                <div class="number">2</div>
+
+                <h3>
+                    რას აკეთებს git push ბრძანება?
+                </h3>
+
+                <p>
+                    <strong>git push</strong> ბრძანება აგზავნის ჩვენს
+                    Local Repository-ში არსებულ Commit-ებს
+                    Remote Repository-ში.
+                </p>
+
+                <p>
+                    მაგალითად, GitHub-ზე ცვლილებების ასატვირთად
+                    შეგვიძლია გამოვიყენოთ:
+                </p>
+
+                <pre><code>git push origin main</code></pre>
+
+            </div>
+
+
+            <!-- კითხვა 3 -->
+
+            <div class="card">
+
+                <div class="number">3</div>
+
+                <h3>
+                    რას ნიშნავს origin Git-ში?
+                </h3>
+
+                <p>
+                    <strong>origin</strong> არის Remote Repository-ის
+                    სტანდარტული სახელი.
+                </p>
+
+                <p>
+                    როდესაც Local Repository-ს GitHub Repository-ს
+                    ვუკავშირებთ, Remote-ს ხშირად ვარქმევთ
+                    <strong>origin</strong>-ს.
+                </p>
+
+                <pre><code>git push origin main</code></pre>
+
+                <p>
+                    აქ <strong>origin</strong> არის Remote Repository,
+                    ხოლო <strong>main</strong> არის Branch.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- შედარება -->
+
+        <section class="comparison">
+
+            <h2>Local vs Remote Repository</h2>
+
+            <div class="compare-container">
+
+                <div class="compare-box">
+                    <h3>Local Repository</h3>
+
+                    <p>
+                        მდებარეობს თქვენს კომპიუტერში და მასში
+                        ინახება პროექტის ადგილობრივი ისტორია,
+                        Commit-ები და ფაილები.
+                    </p>
+                </div>
+
+
+                <div class="compare-box">
+                    <h3>Remote Repository</h3>
+
+                    <p>
+                        მდებარეობს ინტერნეტში, მაგალითად GitHub-ზე,
+                        და გამოიყენება პროექტის შესანახად,
+                        გასაზიარებლად და თანამშრომლობისთვის.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- დავალება 2 -->
+
+        <section class="github-task">
+
+            <div class="section-title">
+                <h2>დავალება 2 — GitHub-თან დაკავშირება</h2>
+
+                <p>
+                    Local Repository-ის GitHub-თან დაკავშირების ნაბიჯები
+                </p>
+            </div>
+
+
+            <div class="steps">
+
+                <div class="step">
+
+                    <div class="step-number">1</div>
+
+                    <div>
+                        <h3>შექმენით ახალი Repository GitHub-ზე</h3>
+
+                        <p>
+                            GitHub-ზე შექმენით ახალი ცარიელი Repository.
+                            შეგიძლიათ არ დაამატოთ README, .gitignore
+                            ან License.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="step-number">2</div>
+
+                    <div>
+                        <h3>დააკავშირეთ Local Repository</h3>
+
+                        <pre><code>git remote add origin https://github.com/USERNAME/REPOSITORY.git</code></pre>
+                    </div>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="step-number">3</div>
+
+                    <div>
+                        <h3>შეამოწმეთ კავშირი</h3>
+
+                        <pre><code>git remote -v</code></pre>
+                    </div>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="step-number">4</div>
+
+                    <div>
+                        <h3>ატვირთეთ Commit-ები GitHub-ზე</h3>
+
+                        <pre><code>git push -u origin main</code></pre>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>
+            Git & GitHub — სასწავლო პროექტი
+        </p>
+    </footer>
+
+</body>
+</html>
